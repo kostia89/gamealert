@@ -1,7 +1,5 @@
 function start(){
-    
     alert('Welcome to my little game');
-    
     let userName = prompt('Please enter your name');
     for (i = 0; userName.length < 1; i++)
     if (userName.length < 1){
@@ -22,17 +20,17 @@ function start(){
     //         numberGest = prompt('tri again. is too much');
     //     }    
     // };
+
+
     for (i = 0; i != numberGest; i++){
         if (numberGest < myNumber){
             numberGest = prompt ('Try again. not enough '+ 'your number ' + numberGest)
             tri = ++tri
-
         }
         if (numberGest > myNumber){
             numberGest = prompt ("Try again. it's too much "+ 'your number ' + numberGest)
             tri = ++tri
         }
-        
     }
     for (i = 0; numberGest.length < 1; i++){
         if (numberGest.length < 1){
@@ -40,11 +38,9 @@ function start(){
             tri = ++tri
         }
     }
-    
     alert ('Yes! This is it ' + 'You did ' + tri + 'attempts')
 }
 const button = document.querySelector('button');
-
 button.addEventListener('click', event => {
     start();
 });
